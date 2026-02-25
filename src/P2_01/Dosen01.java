@@ -1,5 +1,3 @@
-package P2_01;
-
 public class Dosen01 {
     String idDosen;
     String nama;

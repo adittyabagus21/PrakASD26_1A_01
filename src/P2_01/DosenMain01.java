@@ -1,5 +1,3 @@
-package P2_01;
-
 public class DosenMain01 {
     public static void main(String[] args) {
 

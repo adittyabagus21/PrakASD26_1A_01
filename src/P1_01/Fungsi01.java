@@ -1,5 +1,3 @@
-package P1_01;
-
 public class Fungsi01 {
 
     static int hargaAglonema = 75000;

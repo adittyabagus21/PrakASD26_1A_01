@@ -1,5 +1,3 @@
-package P1_01;
-
 import java.util.Scanner;
 
 public class Tugas01_01 {
