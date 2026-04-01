@@ -6,9 +6,8 @@ public class SortingMain01 {
 
         System.out.println("Data awal:");
         dataurutan1.tampil();
-        
         dataurutan1.bubbleSort();
-        System.out.println("Data setelah Bubble Sort:");
+        System.out.println("Data sudah diurutkan dengan Bubble Sort:");
         dataurutan1.tampil();
 
         int[] b = {30, 20, 2, 8, 14};
@@ -16,10 +15,17 @@ public class SortingMain01 {
 
         System.out.println("\nData awal 2:");
         dataurutan2.tampil();
-
         dataurutan2.selectionSort();
-
-        System.out.println("Data sudah diurutkan dengan SELECTION SORT (ASC):");
+        System.out.println("Data sudah diurutkan dengan Selection Sort:");
         dataurutan2.tampil();
+
+        int[] c = {40, 10, 4, 9, 3};
+        Sorting01 dataurutan3 = new Sorting01(c, c.length);
+
+        System.out.println("\nData awal 3:");
+        dataurutan3.tampil();
+        dataurutan3.insertionSort();
+        System.out.println("Data sudah diurutkan dengan INSERTION SORT (ASC):");
+        dataurutan3.tampil();
     }
 }
