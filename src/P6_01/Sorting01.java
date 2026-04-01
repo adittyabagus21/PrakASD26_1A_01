@@ -1,0 +1,35 @@
+public class Sorting01 {
+
+    int[] data;
+    int jumData;
+
+    Sorting01(int[] Data, int jmlDat) {
+        jumData = jmlDat;
+        data = new int[jmlDat];
+
+        for (int i = 0; i < jumData; i++) {
+            data[i] = Data[i];
+        }
+    }
+
+    void bubbleSort() {
+        int temp = 0;
+
+        for (int i = 0; i < jumData - 1; i++) {
+            for (int j = 0; j < jumData - 1; j++) {
+                if (data[j] > data[j + 1]) {
+                    temp = data[j];
+                    data[j] = data[j + 1];
+                    data[j + 1] = temp;
+                }
+            }
+        }
+    }
+
+    void tampil() {
+        for (int i = 0; i < jumData; i++) {
+            System.out.print(data[i] + " ");
+        }
+        System.out.println();
+    }
+}
