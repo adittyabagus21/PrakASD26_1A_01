@@ -1,11 +1,15 @@
 {
     "java.project.sourcePaths": [
+        "src/P5_01",
+        "src/P3_01/Tugas",
+        "src/P3_01/Mahasiswa",
         "src/P2_01",
         "src/P1_01",
-        "src/P3_01/Mahasiswa"
+        "src/P6_01"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
-    ]
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
 }
