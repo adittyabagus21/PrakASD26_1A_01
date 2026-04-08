@@ -5,7 +5,10 @@ public class MahasiswaDemo01 {
         Scanner sc = new Scanner(System.in);
         MahasiswaBerprestasi01 list = new MahasiswaBerprestasi01();
 
-        int jumMhs = 5;
+        System.out.println("Masukkan Jumlah Data Mahasiswa");
+        int jumMhs = sc.nextInt();
+        sc.nextLine();
+        list.listMhs = new Mahasiswa01[jumMhs];
 
         for (int i = 0; i < jumMhs; i++) {
             System.out.println("Masukkan Data Mahasiswa ke-" + (i + 1));

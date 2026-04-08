@@ -1,11 +1,12 @@
 {
     "java.project.sourcePaths": [
+        "src/P6_01",
         "src/P5_01",
         "src/P3_01/Tugas",
         "src/P3_01/Mahasiswa",
         "src/P2_01",
         "src/P1_01",
-        "src/P6_01"
+        "src/P7_01/Percobaan1"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
