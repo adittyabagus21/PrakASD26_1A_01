@@ -60,4 +60,8 @@ public class StackTugasMahasiswa01 {
         }
         System.out.println("");
     }
+
+    public int getJumlahtugas() {
+        return top + 1;
+    }
 }

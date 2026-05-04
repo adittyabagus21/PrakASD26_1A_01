@@ -13,6 +13,7 @@ public class MahasiswaDemo01 {
             System.out.println("3. Melihat Tugas Teratas");
             System.out.println("4. Melihat Daftar Tugas");
             System.out.println("5. Melihat mahasiswa yang pertama mengumpulkan");
+            System.out.println("6. Jumlah tugas yang dikumpulkan");
             System.out.print("Pilih: ");
             pilih = scan.nextInt();
             scan.nextLine();
@@ -59,6 +60,11 @@ public class MahasiswaDemo01 {
                     if (lihatBawah != null) {
                         System.out.println("Tugas pertama dikumpulkan oleh " + lihatBawah.nama );
                     }   
+                    break;
+                
+                case 6:
+                    int jumlah = stack.getJumlahtugas();
+                    System.out.println("jumlah yang dikumpulkan :" + jumlah);
                     break;
 
                 default:
