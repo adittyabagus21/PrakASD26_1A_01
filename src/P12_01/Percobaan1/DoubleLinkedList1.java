@@ -73,12 +73,30 @@ public class DoubleLinkedList1 {
         }
     }
     
-    public void removeFirst() {
-        System.out.println("Belum diimplementasikan (lanjut di Percobaan 2)");
+      public void removeFirst() {
+        if (isEmpty()) {
+            System.out.println("Linked List kosong.");
+            return;
+        }
+        if (head == tail) {
+            head = tail = null;
+        } else {
+            head = head.next;
+            head.prev = null;
+        }
     }
-    
+
     public void removeLast() {
-        System.out.println("Belum diimplementasikan (lanjut di Percobaan 2)");
+        if (isEmpty()) {
+            System.out.println("Linked List kosong.");
+            return;
+        }
+        if (head == tail) {
+            head = tail = null;
+        } else {
+            tail = tail.prev;
+            tail.next = null;
+        }
     }
         public void printReverse() {
     if (isEmpty()) {
