@@ -40,7 +40,7 @@ public class DoubleLinkedList1 {
         while (current != null && !current.data.nim.equals(keyNim)) {
             current = current.next;
         }
-        
+
         if (current == null) {
             System.out.println("Data dengan NIM " + keyNim + " tidak ditemukan.");
             return;
@@ -72,12 +72,14 @@ public class DoubleLinkedList1 {
             current = current.next;
         }
     }
-    
-      public void removeFirst() {
+
+    public void removeFirst() {
         if (isEmpty()) {
             System.out.println("Linked List kosong.");
             return;
         }
+        System.out.println("Data berhasil dihapus:");
+        head.data.tampil();
         if (head == tail) {
             head = tail = null;
         } else {
@@ -91,6 +93,8 @@ public class DoubleLinkedList1 {
             System.out.println("Linked List kosong.");
             return;
         }
+        System.out.println("Data berhasil dihapus:");
+        tail.data.tampil();
         if (head == tail) {
             head = tail = null;
         } else {
@@ -98,15 +102,16 @@ public class DoubleLinkedList1 {
             tail.next = null;
         }
     }
-        public void printReverse() {
-    if (isEmpty()) {
-        System.out.println("Linked List masih kosong.");
-        return;
+
+    public void printReverse() {
+        if (isEmpty()) {
+            System.out.println("Linked List masih kosong.");
+            return;
+        }
+        Node1 current = tail;
+        while (current != null) {
+            current.data.tampil();
+            current = current.prev;
+        }
     }
-    Node1 current = tail;
-    while (current != null) {
-        current.data.tampil();
-        current = current.prev;
-    }
-}
 }
