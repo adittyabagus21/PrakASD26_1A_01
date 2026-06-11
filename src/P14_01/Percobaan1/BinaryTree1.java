@@ -43,7 +43,7 @@ public class BinaryTree1 {
         root = addRekursifHelper(root, mahasiswa);
     }
 
-    public Node1 addRekursifHelper(Node1 current, Mahasiswa1 mahasiswa) {
+    private Node1 addRekursifHelper(Node1 current, Mahasiswa1 mahasiswa) {
         if (current == null) {
             return new Node1(mahasiswa);
         }
@@ -177,7 +177,7 @@ public class BinaryTree1 {
         }
     }
 
-     public void cariMinIPK() {
+    public void cariMinIPK() {
         if (isEmpty()) {
             System.out.println("Tree kosong");
             return;
@@ -203,7 +203,7 @@ public class BinaryTree1 {
         current.mahasiswa.tampilInformasi();
     }
 
-     public void tampilMahasiswaIPKdiAtas(double ipkBatas) {
+    public void tampilMahasiswaIPKdiAtas(double ipkBatas) {
         System.out.println("Mahasiswa dengan IPK di atas " + ipkBatas + ":");
         tampilIPKdiAtasHelper(root, ipkBatas);
     }

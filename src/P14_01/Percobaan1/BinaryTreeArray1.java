@@ -24,6 +24,7 @@ public class BinaryTreeArray1 {
         }
     }
 
+
     public void add(Mahasiswa1 data) {
         if (dataMahasiswa[0] == null) {
             dataMahasiswa[0] = data;
@@ -53,6 +54,8 @@ public class BinaryTreeArray1 {
         }
     }
 
+
+    
     void traversePreOrder(int idxStart) {
         if (idxStart <= idxLast) {
             if (dataMahasiswa[idxStart] != null) {
