@@ -49,12 +49,5 @@ public class BinaryTreeMain1 {
         bstRekursif.addRekursif(new Mahasiswa1("244160131", "Devi",   "A", 3.72));
         System.out.println("InOrder Traversal (addRekursif):");
         bstRekursif.traverseInOrder(bstRekursif.root);
-
-        System.out.println("\n=== TUGAS 2: cariMinIPK & cariMaxIPK ===");
-        bstRekursif.cariMinIPK();
-        bstRekursif.cariMaxIPK();
-
-        System.out.println("\n=== TUGAS 3: tampilMahasiswaIPKdiAtas(3.50) ===");
-        bstRekursif.tampilMahasiswaIPKdiAtas(3.50);
     }
 }
