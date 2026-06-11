@@ -25,6 +25,14 @@ public class ListMahasiswa1 {
         });
     }
 
+    public void sortAscending() {
+        java.util.Collections.sort(mahasiswas, (m1, m2) -> m1.nim.compareTo(m2.nim));
+    }
+
+    public void sortDescending() {
+        java.util.Collections.sort(mahasiswas, (m1, m2) -> m2.nim.compareTo(m1.nim));
+    }
+
     int linearSearch(String nim) {
         for (int i = 0; i < mahasiswas.size(); i++) {
             if (nim.equals(mahasiswas.get(i).nim)) {
