@@ -1,16 +1,17 @@
 package P15_01.Percobaan2;
+
 import java.util.Iterator;
 import java.util.Stack;
 
 public class LoopCollection1 {
     public static void main(String[] args) {
-        List<String> fruits = new Stack<>();
+        Stack<String> fruits = new Stack<>();
         fruits.push("Banana");
         fruits.add("Orange");
         fruits.add("Watermelon");
         fruits.add("Leci");
         fruits.push("Salak");
-
+        fruits.set(fruits.size() - 1, "Strawberry");
         for (String fruit : fruits) {
             System.out.printf("%s ", fruit);
         }
@@ -24,7 +25,7 @@ public class LoopCollection1 {
         fruits.push("Durian");
         System.out.println("");
 
-        for (Iterator<String> it = fruits.iterator(); it.hasNext(); ) {
+        for (Iterator<String> it = fruits.iterator(); it.hasNext();) {
             String fruit = it.next();
             System.out.printf("%s ", fruit);
         }
